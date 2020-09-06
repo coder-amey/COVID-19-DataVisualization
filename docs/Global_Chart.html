@@ -2,17 +2,17 @@
 <html lang="en">
 	<head>
 		<script>
-			var path = window.location.pathname;
+			var path = window.location.pathname.replace("redirect", "COVID-19-DataVisualization");
 	  		window.setTimeout(function(){
 	  			document.getElementById("test").innerHTML += path;
-				window.location.assign("https://coder-amey.github.io/COVID-19-DataVisualization/India_tracker.html" + path);
+				window.location.assign("https://coder-amey.github.io/" + path);
 		 	}, 2000);
 		</script>
 	</head>
 	
 	<body>
 		<p align="center">
-			This website has been permanently relocated. You will now be redirected <a href="https://coder-amey.github.io/COVID-19-DataVisualization/India_tracker.html">there</a>.
+			This website has been permanently relocated. You will now be redirected <a href="https://coder-amey.github.io/COVID-19-DataVisualization">there</a>.
 		</p>
 
 		<div id="test">
