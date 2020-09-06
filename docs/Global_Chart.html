@@ -2,14 +2,21 @@
 <html lang="en">
 	<head>
 		<script>
-		  window.setTimeout(function(){
-			   var path = window.location.pathname;
-			   window.location.assign("https://coder-amey.github.io/COVID-19-DataVisualization/India_tracker.html" + path);
-		    }, 4000);
+			var path = window.location.pathname;
+	  		window.setTimeout(function(){
+	  			document.getElementById("test").innerHTML += path;
+				window.location.assign("https://coder-amey.github.io/COVID-19-DataVisualization/India_tracker.html" + path);
+		 	}, 2000);
 		</script>
 	</head>
 	
 	<body>
-	<p align="center">This website has been permanently relocated. You will now be redirected <a href="https://coder-amey.github.io/COVID-19-DataVisualization/India_tracker.html">there</a>.</p>
+		<p align="center">
+			This website has been permanently relocated. You will now be redirected <a href="https://coder-amey.github.io/COVID-19-DataVisualization/India_tracker.html">there</a>.
+		</p>
+
+		<div id="test">
+			Path: 
+		</div>
 	</body>
 </html> 
